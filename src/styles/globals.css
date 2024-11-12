@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+/* Set background for the listing page only */
+
+  
+  /* Ensure the main container has no padding or background */
+.main-container {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Style the listing box with a direct black border */
+.listing-content {
+    background-color: white;
+    border: 2px solid black; /* Adjust thickness as needed */
+    padding: 16px; /* Adds space inside the border */
+    margin: 0;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect similar to buttons */
+  border-radius: 6px; /* Matches button's rounded corners */
+}
+
+.progress-bar-fill {
+  transition: width 0.3s ease; /* Smooth transition for filling */
+}
+
+@media only screen and (max-width: 768px) {
+  .stat-box-mobile {
+    height: auto;
+    padding: 16px;
+  }
+
+  .stat-title-mobile {
+    font-size: 24px;
+  }
+
+  .stat-improvement-mobile {
+    font-size: 16px;
+  }
+
+  .comparison-box-mobile {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+/* Base styles */
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.table-cell {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.brokr-cell {
+  background-color: #A3E636;
+  font-weight: bold;
+}
+
+.traditional-brokers-cell {
+  background-color: #ffffff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .table-container {
+    grid-template-columns: 1fr;
+  }
+
+  .table-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/auth/callback.js": {
+      "maxDuration": 10
+    }
+  },
+  "build": {
+    "public": "/public"
+  }
+}
